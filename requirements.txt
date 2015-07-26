@@ -1,0 +1,1 @@
+Please note that the script needs PHP 5.4 or higher in order to work (and obviously an Internet connection ;-))
