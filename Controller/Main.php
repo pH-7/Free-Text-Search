@@ -14,11 +14,11 @@ use FreeTextSearch\Engine\FreeText\Parser;
 class Main extends Controller
 {
     public function index()
-    {        
+    {
         /** Display the view **/
         $this->oView->set('inc/header')->set('search_form')->set('inc/footer')->output();
     }
-    
+
     public function result()
     {
         // If someone has made a search request
@@ -30,12 +30,12 @@ class Main extends Controller
             $this->oView->mSearch = $oParser->search();
             $this->oView->aParamResults = $oParser->getParms();
         }
-        
+
         $this->oView->set('inc/header')->set('result')->set('inc/footer')->output();
     }
-    
+
     public function notFound()
     {
         $this->oView->set('inc/header')->set('not_found')->set('inc/footer')->output();
-    } 
+    }
 }

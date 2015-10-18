@@ -5,7 +5,7 @@
  * @license          CC-BY - http://creativecommons.org/licenses/by/3.0/
  * @link             http://hizup.uk
  */
- 
+
 /**
  * Since PHP 5.4, the echo short tag "<?= ?> is always available, so I use it to simplify the visibility of the template.
  * I also use the alternative PHP syntax that is much more clearly in template files.
@@ -17,7 +17,7 @@
 <?php else: ?>
 
     <?php $oResults = $this->mSearch->results // Store "results" attribute in a variable ?>
-    
+
     <?php if($oResults->pagination->total_results > 0): ?>
         <ul>
         <?php foreach ($oResults->ads as $oAd):?>
@@ -27,7 +27,7 @@
     <?php else: ?>
         <p class="warning">Whoops! Any proprety has been found. Please <a href="./?c=main&a=index">re-try</a>.</p>
     <?php endif ?>
-    
+
 <?php endif ?>
 
 <h4 class="s_tMarg">Want to <a href="./?c=main&a=index">make a new search</a>?</h4>

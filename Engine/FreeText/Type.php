@@ -18,12 +18,12 @@ interface Type
      * @array Daft Parameters.
      */
     public function __construct(array $aVals, array $aParms);
-    
+
     /**
      * @return boolean TRUE if validated, FALSE otherwise.
      */
     public function check();
-    
+
     /**
      * @mixed (integer, string, array, ...) The value to get.
      */

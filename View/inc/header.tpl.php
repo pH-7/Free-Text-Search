@@ -9,17 +9,17 @@
         <link rel="stylesheet" href="./static/css/tipsy.css" />
         <link rel="stylesheet" href="./static/css/bootstrap.css" />
         <link rel="stylesheet" href="./static/css/speech-input.css" />
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     </head>
     <body>
-        
+
         <div class="container" role="main">
-        
+
         <header>
             <section class="hero-unit">
                 <h1>Property Free Text Search</h1>
                 <h2>Looking for an accommodation in Ireland?</h2>
             </section>
         </header>
-         
+
         <section>

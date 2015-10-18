@@ -5,7 +5,7 @@
  * @license          CC-BY - http://creativecommons.org/licenses/by/3.0/
  * @link             http://hizup.uk
  */
- 
+
 namespace FreeTextSearch\Engine;
 
 /**
@@ -15,7 +15,7 @@ class Config
 {
     /* Title of the Samble Test Site */
     const SITE_NAME = 'Search Properties for Sale /Rent in Ireland (Powered by Daft)';
-    
+
     /* The Daft API key */
     const DAFT_API_KEY = 'd5a6991ddfa9397852909d8580f339573598f4ec';
 }

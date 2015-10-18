@@ -1,5 +1,5 @@
 <div class="si-wrapper">
-    
+
     <form role="search" action="./" method="get">
         <input type="hidden" name="a" value="result" />
         <p><input type="search" name="free_text" class="span4 si-input" placeholder="2 bed apartment to let in Dublin" title="Find the property that suits you by typing some keywords" required="required" /></p>
@@ -10,7 +10,7 @@
         </button>
         <p><input type="submit" name="submit" class="btn" value="Go, Search!" /></p>
     </form>
-    
+
 </div>
 
 

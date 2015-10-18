@@ -5,7 +5,7 @@
  * @license          CC-BY - http://creativecommons.org/licenses/by/3.0/
  * @link             http://hizup.uk
  */
- 
+
 namespace FreeTextSearch\Engine;
 
 // First off, include necessary Pattern classes
@@ -30,7 +30,7 @@ class Loader
         // First off, find in the Engine folder
         if (is_file(__DIR__ . '/' . $sClass . '.php'))
             require_once __DIR__ . '/' . $sClass . '.php';
-            
+
         // Then, find in the root folder
         if (is_file(dirname(__DIR__) . '/' . $sClass . '.php'))
             require_once dirname(__DIR__) . '/' . $sClass . '.php';

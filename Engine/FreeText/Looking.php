@@ -5,7 +5,7 @@
  * @license          CC-BY - http://creativecommons.org/licenses/by/3.0/
  * @link             http://hizup.uk
  */
- 
+
 namespace FreeTextSearch\Engine\FreeText;
 
 /**
@@ -16,7 +16,7 @@ abstract class Looking
 {
     protected $sTerm;
     protected $bValidated = false;
-    
+
     /**
      * Check if someone is looking for something to ...
      */
@@ -32,7 +32,7 @@ abstract class Looking
             }
         }
    }
-   
+
    /**
     * @return boolean TRUE if the term search has been found, FALSE otherwise.
     */
@@ -40,7 +40,7 @@ abstract class Looking
    {
         return $this->bValidated;
    }
-   
+
    /**
     * Return the exact searched term.
     *

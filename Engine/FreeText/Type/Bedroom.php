@@ -13,7 +13,7 @@ class Bedroom implements \FreeTextSearch\Engine\FreeText\Type
     private $_aBeds = []; // Short PHP 5.4 Array Syntax
     private $_bValidated = false;
     private $_aTerms = ['bed', 'beds', 'bedroom', 'bedrooms']; // Short PHP 5.4 Array Syntax
-    
+
     /**
      * Find bedrooms between 0 and 9 (what it should be the number of rooms...)
      */
@@ -27,7 +27,7 @@ class Bedroom implements \FreeTextSearch\Engine\FreeText\Type
                 {
                     $this->_aBeds[] = $aVals[$iNum-1];
                     $this->_bValidated = true;
-                    
+
                     /*
                      * For multiple numbers (e.g., "Looking for '2' or '3' bedrooms apartment to buy").
                      */
@@ -37,7 +37,7 @@ class Bedroom implements \FreeTextSearch\Engine\FreeText\Type
             }
         }
    }
-   
+
    /**
     * @return boolean TRUE if "bed" terms search has been found, FALSE otherwise.
     */
@@ -45,7 +45,7 @@ class Bedroom implements \FreeTextSearch\Engine\FreeText\Type
    {
         return $this->_bValidated;
    }
-   
+
    /**
     * Get the number of bedrooms (always returns the minimums number even if there is more than one amount).
     *
@@ -55,7 +55,7 @@ class Bedroom implements \FreeTextSearch\Engine\FreeText\Type
    {
         return min($this->_aBeds);
    }
-   
+
    /**
     * If there was two amounts of bedroom specified, returns the maximum one, returns FALSE otherwise.
     *

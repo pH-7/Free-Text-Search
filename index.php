@@ -13,12 +13,12 @@ use FreeTextSearch\Engine as E;
 /* Check if the current PHP version us compatible with the script */
 if (version_compare(PHP_VERSION, '5.4.0', '<'))
     exit('Whoops! Your PHP version is ' . PHP_VERSION . '. The script requires PHP 5.4 or higher.');
-    
+
 try
 {
     require __DIR__ . '/Engine/Loader.php';
     E\Loader::getInstance()->init(); // Loads necessary classes
-    
+
     $aParams = ['ctrl' => (!empty($_GET['p']) ? $_GET['p'] : 'main'), 'act' => (!empty($_GET['a']) ? $_GET['a'] : 'index')]; // I use the new PHP 5.4 short array syntax
     E\Router::run($aParams);
 }

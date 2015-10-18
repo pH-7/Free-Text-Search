@@ -7,7 +7,7 @@
  */
 
 namespace FreeTextSearch\Engine\FreeText\Type;
-use FreeTextSearch\Engine\FreeText as FT; 
+use FreeTextSearch\Engine\FreeText as FT;
 
 class Rental extends FT\Looking implements FT\Type
 {

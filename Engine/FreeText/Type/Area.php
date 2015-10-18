@@ -19,7 +19,7 @@ class Area extends County implements \FreeTextSearch\Engine\FreeText\Type
             'api_key' => $aParms['api_key'],
             'area_type' => 'area'
         ));
-        
+
         $this->looking($oAreas, $aVals);
    }
 }

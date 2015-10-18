@@ -54,7 +54,7 @@ footer {
 abbr {
   border-bottom: 1px dotted #666;
 }
-  
+
 .success {
   color: green;
 }
@@ -87,6 +87,6 @@ input:not([type=radio]) {
 button,input[type="submit"],input[type="reset"] {
   width:190px;
  }
- 
+
  /* Small Top Margin */
 .s_tMarg{margin-top:20px}

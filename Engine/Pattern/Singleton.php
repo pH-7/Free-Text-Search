@@ -25,7 +25,7 @@ trait Singleton
     {
         return (null === static::$_oInstance) ? static::$_oInstance = new static : static::$_oInstance;
     }
-    
+
     /**
      * Directly call "static::getInstance()" method when the object is called as a function.
      * This is of couse optional (especially for that Daft.ie Free Search project). However, it can be sometime useful, especially in big projects...
@@ -34,7 +34,7 @@ trait Singleton
     {
         return static::getInstance();
     }
-    
+
     /**
      * Private serialize/unserialize method to prevent serializing/unserializing.
      */

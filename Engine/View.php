@@ -13,7 +13,7 @@ class View
     private $_sPath;
     private $_sOutput = ''; // Default Output value
     private $_sExt = '.tpl.php'; // Defaut Template extension
-    
+
     public function __construct($sDir)
     {
         $sPath =  realpath($sDir);
@@ -22,7 +22,7 @@ class View
         else
             throw new \Exception('The "' . $sPath . '" path doesn\'t exist');
     }
-    
+
     public function set($sFile)
     {
         $sFullPath = $this->_sPath . '/' . $sFile . $this->_sExt;
@@ -32,16 +32,16 @@ class View
             require $sFullPath;
             $this->_sOutput .= ob_get_contents();
             ob_end_clean();
-            
+
             return $this;
         }
         else
-            throw new \Exception('The "' . $sFullPath . '" file doesn\'t exist');   
+            throw new \Exception('The "' . $sFullPath . '" file doesn\'t exist');
     }
-    
+
     /**
      * Returns the Output to display on the Web browser.
-     * 
+     *
      * @return string
      */
     public function output()
@@ -51,7 +51,7 @@ class View
 
     /**
      * Set variables for the template views.
-     * 
+     *
      *@param string $sKey The Key name.
      *@param mixed $mVal The value to set.
      * @return void

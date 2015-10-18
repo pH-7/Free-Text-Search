@@ -13,10 +13,10 @@ use FreeTextSearch\Engine as E;
 abstract class Controller
 {
     protected $oView;
-    
+
     public function __construct()
     {
         $this->oView = new E\View(dirname(__DIR__) . '/View/');
-        $this->oView->sTitle = E\Config::SITE_NAME;    
-    }   
+        $this->oView->sTitle = E\Config::SITE_NAME;
+    }
 }

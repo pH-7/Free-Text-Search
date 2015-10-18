@@ -12,7 +12,7 @@ class County implements \FreeTextSearch\Engine\FreeText\Type
 {
     protected $sVal;
     protected $bValidated = false;
-    
+
     /**
      * Search counties using the Daft API.
      */
@@ -22,10 +22,10 @@ class County implements \FreeTextSearch\Engine\FreeText\Type
             'api_key' => $aParms['api_key'],
             'area_type' => 'county'
         ));
-        
+
         $this->looking($oAreas, $aVals);
    }
-   
+
    /**
     * Check if the location entered matches with the location list from Daft API.
     *
@@ -39,7 +39,7 @@ class County implements \FreeTextSearch\Engine\FreeText\Type
         {
             // "_clean()" makes the "location string" from the API lowercase ($aVals in already lowercase from Parser class).
             $sLocation = $this->clean($oArea->name);
-            
+
             if ($iNum = array_search($sLocation, $aVals))
             {
                 $this->sVal = $aVals[$iNum];
@@ -48,7 +48,7 @@ class County implements \FreeTextSearch\Engine\FreeText\Type
             }
         }
    }
-   
+
    /**
     * @return boolean Returns TRUE if the location entered has been found in the API list, FALSE otherwise.
     */
@@ -56,7 +56,7 @@ class County implements \FreeTextSearch\Engine\FreeText\Type
    {
         return $this->bValidated;
    }
-   
+
    /**
     * @return string The areas
     */
@@ -64,7 +64,7 @@ class County implements \FreeTextSearch\Engine\FreeText\Type
    {
         return $this->sVal;
    }
-   
+
    /**
     * Makes the string lowercase (for areas & counties) and removes "co. " (for counties only).
     *

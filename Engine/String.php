@@ -12,7 +12,7 @@ class String
 {
     // Include the Static Trait, because it is a Static class (there are only static methods).
     use \FreeTextSearch\Engine\Pattern\Stic;
-    
+
     /**
      * Escape string with htmlspecialchars() PHP function.
      *
