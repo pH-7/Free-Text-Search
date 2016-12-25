@@ -8,6 +8,8 @@
 
 namespace FreeTextSearch\Engine\FreeText;
 
+use FreeTextSearch\Engine\Str;
+
 class Parser
 {
     private $_sSentence;
@@ -35,7 +37,7 @@ class Parser
         $aWords = explode(' ', $this->_sSentence);
 
         $aTypes = $this->getTypes();
-        $sNS = '\FreeTextSearch\Engine\FreeText\Type\\'; // The namepsaces of Type classes
+        $sNS = '\FreeTextSearch\Engine\FreeText\Type\\';
 
         foreach($aTypes as $sType)
         {
@@ -151,13 +153,13 @@ class Parser
     }
 
     /**
-     * Cleans the input string and makes the string lowercase.
+     * Cleans input strings and makes them lowercase.
      *
      * @return void
      */
     protected function clean()
     {
-        $this->_sSentence = strtolower(\FreeTextSearch\Engine\String::escape($this->_sSentence, true));
+        $this->_sSentence = strtolower(Str::escape($this->_sSentence, true));
     }
 
     protected function getTypes()

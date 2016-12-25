@@ -25,7 +25,7 @@ class Main extends Controller
         if (!empty($_GET['free_text']))
         {
             /** Initialization of the Parser class */
-            $sFreeText = E\String::escape($_GET['free_text']);
+            $sFreeText = E\Str::escape($_GET['free_text']);
             $oParser = new Parser($sFreeText, E\Config::DAFT_API_KEY);
             $this->oView->mSearch = $oParser->search();
             $this->oView->aParamResults = $oParser->getParms();

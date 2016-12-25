@@ -8,7 +8,7 @@
 
 namespace FreeTextSearch\Engine;
 
-class String
+class Str
 {
     // Include the Static Trait, because it is a Static class (there are only static methods).
     use \FreeTextSearch\Engine\Pattern\Stic;
