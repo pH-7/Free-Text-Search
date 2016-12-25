@@ -37,6 +37,8 @@ class Parser
         $aWords = explode(' ', $this->_sSentence);
 
         $aTypes = $this->getTypes();
+
+        // The namepsaces for the Type classes
         $sNS = '\FreeTextSearch\Engine\FreeText\Type\\';
 
         foreach($aTypes as $sType)
