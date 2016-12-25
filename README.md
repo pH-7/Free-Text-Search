@@ -72,6 +72,11 @@ Following the "*letter type* lower case, the variable name is in UpperCamelCase 
 *PHP Extension* SOAPClient
 
 
+## Other Requirements
+
+* A Valid [Daft API Key](https://github.com/pH-7/Free-Text-Search/blob/master/Engine/Config.php#L20)
+
+
 ## About Me
 
 I'm **Pierre-Henry Soria**, IT developer and passionate about e-businesses and marketing.
